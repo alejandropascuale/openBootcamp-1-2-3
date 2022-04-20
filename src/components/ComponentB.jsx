@@ -7,7 +7,7 @@ function ComponentB({ contact }) {
     <>
         <h1>{ contact.firstName+' '+contact.lastName }</h1>
         <h2>{ contact.email }</h2>
-        <h3>{ contact.online ? 'Online' : 'Outline' }</h3>
+        <h3>{ contact.online ? 'Contacto En Línea' : 'Contacto No Disponible' }</h3>
     </>
   )
 }
