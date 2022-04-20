@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { Contact } from '../models/contact.class'
 import ComponentB from './ComponentB'
 
 export default function ComponentA({ contact }) {
-
+    
   return (
     <>
         <h1>Nombre y Apellido: { contact.firstName+' '+contact.lastName }</h1>
@@ -14,3 +15,7 @@ export default function ComponentA({ contact }) {
     </>
   )
 }
+
+ComponentA.propTypes = {
+  contacto: PropTypes.instanceOf(Contact),
+};
